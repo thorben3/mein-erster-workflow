@@ -9,7 +9,7 @@ jobs:
   info:
     runs-on: ubuntu-latest
     steps:
-      - name: Auslöser anzeigen
+      - name: Immer
         run: echo "Auslöser= ${{ github.event_name }}"
 
       - name: Nur bei Push
