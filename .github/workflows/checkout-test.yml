@@ -1,0 +1,19 @@
+name: Checkout
+
+on:
+  push:
+  workflow_dispatch:
+   
+obs:
+  Checkout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Prüfung der Ausgabe
+        continue-on-error: true
+        run: cat hallo.txt
+
+      - name: Laden der Checkout-Funktion
+        uses: actions/checkout@v4
+
+      - name: Verwendet die Checkout-Funktion
+        run: cat hallo.txt
